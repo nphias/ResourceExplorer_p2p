@@ -159,7 +159,6 @@ let webpackConfig = {
         new HtmlWebpackPlugin(indexConfig),
         new Webpack.ContextReplacementPlugin(/angular([\\\/])core([\\\/])/, path.resolve(__dirname, './src')),
         new CopyWebpackPlugin([
-            './package.json',
             { from: 'src/assets', to: 'assets' }
         ]),
     ],
