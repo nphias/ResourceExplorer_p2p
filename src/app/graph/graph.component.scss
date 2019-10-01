@@ -1,0 +1,35 @@
+
+.title {
+    color: black;
+    margin:0;
+    padding:50px 20px;
+  }
+  mat-sidenav-container {
+    min-height: 300px;
+    height: 100%
+  }
+  .mat-drawer-container {
+    background-color: black
+  }
+  /*
+   * Sidebar
+   */
+  
+   mat-sidenav {
+    width: 200px;
+  }
+  
+  mat-card {
+      top: 4vh;
+      width: 90%;
+      height: 85vh;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      vertical-align: middle;
+      overflow: auto;
+      opacity: 0.55 !important;
+      background-color: black;
+      /*background-color: transparent !important;*/
+  }
+

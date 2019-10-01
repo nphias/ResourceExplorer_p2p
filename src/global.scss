@@ -1,0 +1,19 @@
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url('./assets/fonts/Raleway-Regular.woff2') format('woff2');
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-image: url("./assets/background.jpg");
+  background-position-y: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

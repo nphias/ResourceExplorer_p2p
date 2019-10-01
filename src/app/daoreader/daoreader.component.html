@@ -1,0 +1,14 @@
+<mat-card>
+  <mat-card-content>
+        <input type="button" (click)="searchResources()" value="Discover new Resources">
+        <br><br>
+          <mat-select name="resourceSel" type="object" [compareWith]="compareObjects" (selectionChange)="getResource($event)" [(ngModel)]="selectedresource">
+            <mat-option *ngFor="let selectedresource of resources" [value]="selectedresource">{{selectedresource.name}}</mat-option>
+          </mat-select>
+       
+    <br>
+    <h3></h3>
+    {{resourcesfound | async}}
+  </mat-card-content>
+</mat-card>
+

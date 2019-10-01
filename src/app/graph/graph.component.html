@@ -1,0 +1,17 @@
+<mat-card>
+  <mat-sidenav-container class="flex-me">
+      <mat-sidenav mode="side" opened>
+              <h1 class="title">
+                Resource Explorer
+                <!--{{ 'PAGES.HOME.TITLE' | translate }}-->
+              </h1><br>
+              <daoreader (changeResource)="onResourceChange($event)"></daoreader>
+              <br>
+          <!--<button mat-button (click)="showTimetable()">Schedule 2019</button>-->
+      </mat-sidenav>
+      <mat-sidenav-content>
+          <am4chart [resourceName]="selectedresource"></am4chart>
+      </mat-sidenav-content>
+  </mat-sidenav-container>
+</mat-card>
+
