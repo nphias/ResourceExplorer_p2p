@@ -16,12 +16,13 @@
 		"explorer"
 	],
 	"author": "Thomas Cal",
-	"license": "Apache2",
+	"license": "https://github.com/nphias/ResourceExplorer_p2p#licence",
 	"main": "electron.js",
 	"scripts": {
 		"dev": "tsc electron.ts --outDir . && cross-env NODE_ENV=dev webpack-dev-server --port=4200",
 		"prod": "webpack && electron dist/electron.js",
 		"start": "electron dist/electron.js",
+		"build": "webpack",
 		"packager:win": "cross-env NODE_OS=win node builder/packager.js",
 		"packager:mac": "cross-env NODE_OS=mac node builder/packager.js",
 		"packager:linux": "cross-env NODE_OS=linux node builder/packager.js",
@@ -30,10 +31,10 @@
 		"installer:linux": "npm run packager:linux && cross-env NODE_OS=linux node builder/installer.js"
 	},
 	"devDependencies": {
-		"@amcharts/amcharts4": "^4.6.4",
+		"@amcharts/amcharts4": "^4.6.5",
 		"@angular/animations": "^8.2.8",
-		"@angular/cdk": "^8.2.1",
-		"@angular/material": "^8.2.1",
+		"@angular/cdk": "^8.2.2",
+		"@angular/material": "^8.2.2",
 		"clean-webpack-plugin": "^3.0.0",
 		"concurrently": "^4.1.1",
 		"copy-webpack-plugin": "^5.0.4",
@@ -45,7 +46,7 @@
 		"file-loader": "^4.1.0",
 		"html-loader": "^0.5.5",
 		"html-webpack-plugin": "^3.2.0",
-		"imagemin": "^7.0.0",
+		"imagemin": "^6.0.0",
 		"img-loader": "^3.0.1",
 		"lodash": "^4.17.15",
 		"node-sass": "^4.12.0",
@@ -71,18 +72,17 @@
 		"electron-winstaller": "^4.0.0"
 	},
 	"dependencies": {
-		"@angular/common": "^8.2.0",
-		"@angular/compiler": "^8.2.0",
-		"@angular/core": "^8.2.0",
-		"@angular/forms": "^8.2.0",
-		"@angular/platform-browser": "^8.2.0",
-		"@angular/platform-browser-dynamic": "^8.2.0",
-		"@angular/router": "^8.2.0",
-		"angular-in-memory-web-api": "^0.8.0",
+		"@angular/common": "^8.2.8",
+		"@angular/compiler": "^8.2.8",
+		"@angular/core": "^8.2.8",
+		"@angular/forms": "^8.2.8",
+		"@angular/platform-browser": "^8.2.8",
+		"@angular/platform-browser-dynamic": "^8.2.8",
+		"angular-in-memory-web-api": "^0.9.0",
 		"autoprefixer": "^9.6.1",
 		"core-js": "^3.1.4",
-		"electron": "^6.0.0",
-		"rxjs": "^6.5.2",
-		"zone.js": "^0.10.1"
+		"electron": "^6.0.11",
+		"rxjs": "^6.5.3",
+		"zone.js": "^0.10.2"
 	}
 }
